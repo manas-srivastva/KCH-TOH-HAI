@@ -9,7 +9,6 @@ import { EmojiCursorTrail } from './components/EmojiCursorTrail';
 import { FloatingEmojis } from './components/FloatingEmojis';
 import { MarqueeTicker } from './components/MarqueeTicker';
 import { SurpriseGiftModal } from './components/SurpriseGiftModal';
-import { SpinWheelModal } from './components/SpinWheelModal';
 
 import { IntroSection } from './sections/01_IntroSection';
 import { ChildhoodSection } from './sections/02_ChildhoodSection';
@@ -25,7 +24,6 @@ import { ComplimentGeneratorSection } from './sections/ComplimentGeneratorSectio
 export default function App() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [isGiftOpen, setIsGiftOpen] = useState(false);
-  const [isWheelOpen, setIsWheelOpen] = useState(false);
 
   const handleStartJourney = () => {
     const el = document.getElementById('childhood');
@@ -58,7 +56,6 @@ export default function App() {
           birthdayData={birthdayData}
           onStartJourney={handleStartJourney}
           onOpenGift={() => setIsGiftOpen(true)}
-          onOpenWheel={() => setIsWheelOpen(true)}
         />
 
         {/* Scrolling Ticker Divider */}
@@ -88,12 +85,6 @@ export default function App() {
         birthdayName={birthdayData.birthdayPerson.name}
         isOpen={isGiftOpen}
         onClose={() => setIsGiftOpen(false)}
-      />
-
-      <SpinWheelModal
-        birthdayName={birthdayData.birthdayPerson.name}
-        isOpen={isWheelOpen}
-        onClose={() => setIsWheelOpen(false)}
       />
 
       {/* Click-to-Expand Photo Lightbox */}

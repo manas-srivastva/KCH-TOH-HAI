@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Gift, ChevronDown, Heart, Disc, Radio } from 'lucide-react';
+import { Sparkles, Gift, ChevronDown, Heart, Disc } from 'lucide-react';
 import { triggerConfettiExplosion } from '../components/CelebrationOverlay';
 import { Snoopy3D } from '../components/Snoopy3D';
 
-export const IntroSection = ({ birthdayData, onStartJourney, onOpenGift, onOpenWheel }) => {
+export const IntroSection = ({ birthdayData, onStartJourney, onOpenGift }) => {
   const { intro, birthdayPerson } = birthdayData;
 
   const handleStart = () => {
@@ -66,13 +66,6 @@ export const IntroSection = ({ birthdayData, onStartJourney, onOpenGift, onOpenW
           <span>Surprise VIP Gift! 🎁</span>
         </button>
 
-        <button
-          onClick={onOpenWheel}
-          className="px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white font-extrabold text-xs sm:text-sm rounded-full shadow-[0_0_20px_rgba(0,243,255,0.5)] border border-cyan-400/50 flex items-center gap-2 cursor-pointer transform hover:scale-105 transition-all"
-        >
-          <Radio className="w-4 h-4 text-amber-300 animate-pulse" />
-          <span>Spin DJ Wheel! 🎧</span>
-        </button>
       </motion.div>
 
       {/* 3D Snoopy Stage */}
