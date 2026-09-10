@@ -156,9 +156,9 @@ export const birthdayData = {
       {
         id: "t4",
         era: "Present Day ✨",
-        title: "Certified Legend",
+        title: "Certified GAWAR",
         year: "Now",
-        description: "Thriving, shining, lighting up every room, and celebrating another fabulous year!",
+        description: "Iska bhi desription chaiye kya?😂",
         image: "/images/then-now/14THPHOTO.jpeg",
         badgeColor: "bg-amber-500/20 text-amber-300 border-amber-500/40",
       },
@@ -272,8 +272,8 @@ export const birthdayData = {
       "Baaki, happy birthday once again! ❤️ And obviously… kal free ka khaana milega YAYYYYYYY!!! 😭😂",
       "One last thing I want to say to you: Even if I meet a thousand other people and make a thousand other friends, no one could ever be you. There will always be only one Ada, and I’m really glad that person is a part of my life.",
     ],
-    signOff: "With tons of love & high fives,",
-    sender: "Your Favorite Troublemaker 💖",
+    signOff: "With tons of  Gaali& high fives,",
+    sender: "Your Favorite :Mansii",
   },
 
   // ------------------------------------------------------------------
